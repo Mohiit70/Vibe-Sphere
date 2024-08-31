@@ -1,1 +1,0 @@
-VibeSphere is a dynamic mood-based recommendation platform that syncs with your environment and emotions in real-time. It uses weather data and personal input to curate personalized suggestions for music, books, and activities, creating a unique ecosystem that evolves with your mood.

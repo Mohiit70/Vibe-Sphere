@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1>MoodSync: Your Personal Vibe Curator</h1>
+    <form id="mood-form">
+        <input type="text" id="location" placeholder="Enter your location" required>
+        <select id="day-rating" required>
+            <option value="">How was your day? (1-5)</option>
+            <option value="1">1 - Terrible</option>
+            <option value="2">2 - Bad</option>
+            <option value="3">3 - Okay</option>
+            <option value="4">4 - Good</option>
+            <option value="5">5 - Great</option>
+        </select>
+        <select id="energy-level" required>
+            <option value="">What's your energy level?</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+        <button type="submit">Get My Vibe</button>
+    </form>
+    <div id="result" class="hidden">
+        <h2>Your Mood: <span id="mood"></span></h2>
+        <p>Recommendation: <span id="recommendation"></span></p>
+    </div>
+</div>
+{% endblock %}
